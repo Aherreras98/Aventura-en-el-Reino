@@ -1,3 +1,7 @@
+export const EUR = new Intl.NumberFormat('es-ES', {
+  style: 'currency',
+  currency: 'EUR'
+});
 /**
  * Agrupa los elementos de un array según una función de selección.
  *
