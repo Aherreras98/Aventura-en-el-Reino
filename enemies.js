@@ -1,4 +1,4 @@
-export { Enemigo, Jefe };
+
 
 class Enemigo {
     constructor(nombre, ataque, vida, tipo) {
@@ -13,11 +13,6 @@ class Enemigo {
     }
 }
 
-const goblin = new Enemigo('Goblin', 10, 3)
-const esqueleto = new Enemigo('Esqueleto', 16, 7)
-
-console.log(goblin.presentacion())
-console.log(esqueleto.presentacion())
 
 class Jefe extends Enemigo {
     constructor(nombre, ataque, vida, habilidadEspecial, multiplicadorDeDanio = 1.5) {
@@ -33,7 +28,5 @@ class Jefe extends Enemigo {
     }
 }
 
-const dragon = new Jefe('Dragón', 33, 100, 'Aliento de Fuego');
 
-console.log(dragon.presentacion());
-
+export { Enemigo, Jefe };
